@@ -1,7 +1,7 @@
 let cantidad = document.getElementById('cantidad');
 let boton = document.getElementById('generar');
 let contrasena = document.getElementById('contrasena');
-let botonBorrar = document.getElementById('limpiar');
+let botonBorrar = document.getElementById('Limpiar');
 let mensaje = document.getElementById('mensajeValidacion');
 
 const cadenaCaracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@()?_.;/^#$*%&'
@@ -26,24 +26,24 @@ function generar(){
     contrasena.value = password;
 
     // Validar la contraseña luego de generarla
-    validarpassword(password);
+    validarPassword(password);
 }
 
-function limpiar(){
+function limpiarCampos(){
     // Limpiar el campo de contraseña
-    contraseña.value() = '';
+    contrasena.value = '';
 
     // Limpiar el campo de contraseña
-    cantidad.value() = '';
+    cantidad.value = '';
     mensaje.textContent = '';  // limpia el mensaje de validacion si lo hubiera
 }
 
 // Even listener al boton para limpiar los campos
-botonBorrar.addEvenlistener('click', limpiar);
+botonBorrar.addEvenlistener('click', limpiarCampos);
 
 // Varificacion de la seguridad
-function validarpassword(){
-    const password = contrasena.value();
+function validarPassword(){
+    const password = contrasena.value
 
     let numero = /\d/;
     let minuscula = /[a-z]/;
