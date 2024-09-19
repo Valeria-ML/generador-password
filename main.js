@@ -6,6 +6,10 @@ let mensaje = document.getElementById('mensajeValidacion');
 
 const cadenaCaracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@()?_.;/^#$*%&'
 
+function generar(){
+
+    let numeroDigitado = parseInt( cantidad.value);   
+
     if( numeroDigitado < 8){
         alert('La cantidad de caracteres tiene que ser mayor que 8');
     }
@@ -23,7 +27,7 @@ const cadenaCaracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01
 
     // Validar la contraseña luego de generarla
     validarpassword(password);
-
+}
 
 function limpiar(){
     // Limpiar el campo de contraseña
