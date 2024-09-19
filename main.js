@@ -1,6 +1,7 @@
 let cantidad = document.getElementById('cantidad');
 let boton = document.getElementById('generar');
 let contrasena = document.getElementById('contrasena');
+let botonBorrar = document.gentElementById('limpiar');
 
 const cadenaCaracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
