@@ -23,7 +23,7 @@ const cadenaCaracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01
 
     // Validar la contraseña luego de generarla
     validarpassword(password);
-}
+
 
 function limpiar(){
     // Limpiar el campo de contraseña
